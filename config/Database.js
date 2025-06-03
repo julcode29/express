@@ -1,8 +1,12 @@
 import {Sequelize} from "sequelize";
 
-const db = new Sequelize('crud_db','root','',{
-    host: 'localhost',
-    dialect: 'mysql'
+const db = new Sequelize('test','2PABVGxvqiFUz6f.root','RA9fNDEAnDuplTTY',{
+    host: 'gateway01.us-east-1.prod.aws.tidbcloud.com',
+    port: 4000,
+    dialect: 'mysql',
+    dialectOptions: {
+        ssl: {"rejectUnauthorized":true}
+    }
 });
 
 export default db;
