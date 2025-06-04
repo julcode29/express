@@ -1,12 +1,8 @@
-import express from "express";
-import cors from "cors";
-import UserRoute from "../routes/UserRoute.js";
-
+const express = require("express");
 const app = express();
-app.use(cors());
-app.use(express.json());
-app.use(UserRoute);
 
-app.listen(5000, ()=> console.log('Server up and running...'));
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
-export default app
+app.listen(3000, () => console.log("Server ready on port 3000."));
+
+module.exports = app;
