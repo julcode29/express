@@ -8,3 +8,5 @@ app.use(express.json());
 app.use(UserRoute);
 
 app.listen(5000, ()=> console.log('Server up and running...'));
+
+export default app
