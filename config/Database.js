@@ -9,4 +9,4 @@ const db = new Sequelize('test','2PABVGxvqiFUz6f.root','RA9fNDEAnDuplTTY',{
     }
 });
 
-export.defaults = db;
+module.exports = db;
