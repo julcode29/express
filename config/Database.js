@@ -1,4 +1,4 @@
-import {Sequelize} from "sequelize";
+const {Sequelize} = require("sequelize");
 
 const db = new Sequelize('test','2PABVGxvqiFUz6f.root','RA9fNDEAnDuplTTY',{
     host: 'gateway01.us-east-1.prod.aws.tidbcloud.com',
@@ -9,4 +9,4 @@ const db = new Sequelize('test','2PABVGxvqiFUz6f.root','RA9fNDEAnDuplTTY',{
     }
 });
 
-export default db;
+export.defaults = db;
